@@ -44,9 +44,6 @@ src/
 
 ## 📷 Screenshots
 
-> Insert your screenshots here (desktop + mobile view recommended)  
-> You can add with markdown or links:
-
 ```md
 ![Desktop View](/src/assets/images/laptop-screen.png)
 ![Mobile View](/src/assets/images/mobile-screen.png)
@@ -58,8 +55,8 @@ src/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/new-home-ui-tailwind.git
-cd new-home-ui-tailwind
+git clone https://github.com/razashaikh99/New-Home-UI-Tailwind.git
+cd New-Home-UI-Tailwind
 ```
 
 ### 2. Install Dependencies
