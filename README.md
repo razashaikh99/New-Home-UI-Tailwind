@@ -48,8 +48,8 @@ src/
 > You can add with markdown or links:
 
 ```md
-![Desktop View](./screenshots/desktop.png)
-![Mobile View](./screenshots/mobile.png)
+![Desktop View](/src/assets/images/laptop-screen.png)
+![Mobile View](/src/assets/images/mobile-screen.png)
 ```
 
 ---
@@ -74,25 +74,9 @@ npm run dev
 
 ---
 
-## 🚀 Deployment
-
-This project is easily deployable on platforms like:
-
-- [Vercel](https://vercel.com/)
-- [Netlify](https://netlify.com/)
-- [Firebase Hosting](https://firebase.google.com/)
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
 ## 👨‍💻 Author
 
-Developed by **Raza Sheikh**  
+Developed by **Raza Shaikh**  
 📧 Feel free to reach out for collaboration or suggestions.
 
 ---
