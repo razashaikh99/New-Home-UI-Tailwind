@@ -7,7 +7,7 @@ export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <header className="w-full bg-white top-0 left-0 z-50">
+        <header className="w-full bg-white fixed top-0 left-0 z-50 shadow-md">
             <div className="max-w-7xl mx-4 lg:mx-auto px-4 sm:px-6 lg:px-5 flex justify-between items-center h-20">
                 {/* Logo */}
                 <div>
@@ -38,38 +38,38 @@ export default function Header() {
 
                 {/* Hamburger Button (visible on sm & md) */}
                 <div className="block lg:hidden">
-                    {/* <button onClick={() => setMenuOpen(!menuOpen)}> */}
                     <button
                         onClick={() => setMenuOpen(!menuOpen)}
                         className="text-2xl font-bold cursor-pointer">
                         {menuOpen ? '✕' : '☰'}
                     </button>
-                    {/* </button> */}
                 </div>
             </div>
 
-            {/* Mobile Menu (visible on sm & md only) */}
-            {menuOpen && (
-                <div className="block lg:hidden bg-white px-4 py-4 space-y-4 text-center text-gray-700 font-medium shadow">
-                    <ul className="space-y-2">
-                        <li className="block cursor-pointer hover:underline underline-offset-4">HOME</li>
-                        <li className="block cursor-pointer hover:underline underline-offset-4">PAGES</li>
-                        <li className="block cursor-pointer hover:underline underline-offset-4">PROPERTY</li>
-                        <li className="block cursor-pointer hover:underline underline-offset-4">BLOG</li>
-                    </ul>
-                    <hr className="my-2" />
-                    <div className="flex justify-center gap-4">
-                        <div className="flex items-center gap-2">
-                            <img src={Icon_01} alt="Join Us" className="w-4" />
-                            <button className="cursor-pointer">JOIN US</button>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <img src={Icon_02} alt="Add Property" className="w-4" />
-                            <button className="cursor-pointer">ADD PROPERTY</button>
-                        </div>
+            {/* Mobile Menu (overlay style) */}
+            <div
+                className={`absolute top-20 left-0 w-full bg-white px-4 py-4 text-center text-gray-700 font-medium shadow z-40 block lg:hidden transform transition-transform duration-300 origin-top ${menuOpen ? 'scale-y-100' : 'scale-y-0'
+                    }`}
+            >
+                <ul className="space-y-2">
+                    <li className="block cursor-pointer hover:underline underline-offset-4">HOME</li>
+                    <li className="block cursor-pointer hover:underline underline-offset-4">PAGES</li>
+                    <li className="block cursor-pointer hover:underline underline-offset-4">PROPERTY</li>
+                    <li className="block cursor-pointer hover:underline underline-offset-4">BLOG</li>
+                </ul>
+                <hr className="my-2" />
+                <div className="flex justify-center gap-4">
+                    <div className="flex items-center gap-2">
+                        <img src={Icon_01} alt="Join Us" className="w-4" />
+                        <button className="cursor-pointer">JOIN US</button>
+                    </div>
+                    <div className="flex items-center gap-2">
+                        <img src={Icon_02} alt="Add Property" className="w-4" />
+                        <button className="cursor-pointer">ADD PROPERTY</button>
                     </div>
                 </div>
-            )}
+            </div>
+
         </header>
     );
 }
