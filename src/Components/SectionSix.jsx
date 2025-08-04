@@ -1,10 +1,11 @@
 import React from 'react'
 import MinusIcon from "../assets/images/minus-icon.svg"
 import PlusIcon from "../assets/images/plus-icon.svg"
+import Container from './Container'
 
 export default function SectionSix() {
     return (
-        <div className='w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 mb-16'>
+        <Container className='w-full mt-10 mb-16'>
             <div className='py-12'>
                 <p className='text-3xl sm:text-4xl text-center font-semibold'>Frequently Asked Questions</p>
             </div>
@@ -52,6 +53,6 @@ export default function SectionSix() {
                 </div>
             ))}
             <hr />
-        </div>
+        </Container>
     )
 }

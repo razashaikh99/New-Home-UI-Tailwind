@@ -1,4 +1,5 @@
 import BgImage from "../assets/images/bg-01.png";
+import Container from "./Container";
 
 export default function SectionOne() {
     return (
@@ -6,10 +7,10 @@ export default function SectionOne() {
             className="mt-23 lg:mt-24 md:w-[98.4%] h-120 lg:h-140 mb-3 mx-2 lg:mx-3 rounded-xl bg-cover bg-center flex items-center"
             style={{
                 backgroundImage: `url(${BgImage})`,
-                minHeight: "300px", 
+                minHeight: "300px",
             }}
         >
-            <div className="w-full px-4 md:px-24 py-12 flex flex-col justify-center">
+            <Container className="w-full py-12 flex flex-col justify-center">
                 <h1 className="text-white text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-12 lg:leading-tight mb-4 text-shadow-lg">
                     Earn More Host Smarter <br />
                     Join The Community.
@@ -23,7 +24,7 @@ export default function SectionOne() {
                 >
                     Sign Up As A Host
                 </button>
-            </div>
+            </Container>
         </div>
     );
 }

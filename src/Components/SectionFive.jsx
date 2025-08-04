@@ -1,6 +1,7 @@
 import React from 'react';
 import ProfileImg01 from "../assets/images/profile-01.png";
 import ProfileImg02 from "../assets/images/profile-02.png";
+import Container from './Container';
 
 const testimonials = [
     {
@@ -35,8 +36,8 @@ const testimonials = [
 
 export default function SectionFive() {
     return (
-        <div className="overflow-x-hidden py-20 bg-gray-100">
-            <div className='max-w-screen-xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20'>
+        <div className="overflow-x-hidden py-20 bg-gray-100  w-[98%] mx-auto rounded-xl">
+            <Container className='mx-auto'>
                 <h2 className="text-center text-3xl sm:text-4xl lg:text-5xl font-semibold mb-12">
                     What Our Hosts Say
                 </h2>
@@ -69,7 +70,8 @@ export default function SectionFive() {
                     <span className='p-2 bg-[#FB8053] opacity-50 rounded-full'></span>
                     <span className='p-2 bg-[#FB8053] opacity-50 rounded-full'></span>
                 </div>
-            </div>
+            </Container>
         </div >
     );
 }
+

@@ -2,6 +2,7 @@ import BgImage02 from "../assets/images/bg-02.png";
 import Frame01 from "../assets/images/frame-01.svg";
 import Frame02 from "../assets/images/frame-02.svg";
 import Frame03 from "../assets/images/frame-03.svg";
+import Container from "./Container";
 
 export default function SectionThree() {
     const stats = [
@@ -11,19 +12,19 @@ export default function SectionThree() {
     ];
 
     return (
-        <section className="bg-gray w-full py-20 px-4 sm:px-8 md:px-12 lg:px-20">
-            <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
+        <section className="bg-gray py-20 w-[98%] mx-auto rounded-xl">
+            <Container className="flex flex-col-reverse lg:flex-row items-center gap-12">
                 {/* Left Side (Text + Stats) */}
                 <div className="w-full lg:w-1/2">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-8">
                         Why Become a Host?
                     </h2>
-                    <div className="flex flex-col gap-4 mt-10 lg:mt-16 ">
+                    <div className="flex flex-col gap-4 mt-10 lg:mt-16">
                         {stats.map((item, index) => (
                             <div
                                 key={index}
                                 data-aos="flip-left"
-                                className="bg-white w-full lg:w-90 rounded-xl flex items-center gap-4 shadow-sm hover:shadow-md transition duration-300 px-5 py-4"
+                                className="bg-white w-full rounded-xl flex items-center gap-4 shadow-sm hover:shadow-md transition duration-300 px-5 py-4"
                             >
                                 <img src={item.icon} alt={item.label} className="w-10 h-12 object-contain" />
                                 <div>
@@ -43,8 +44,7 @@ export default function SectionThree() {
                         className="w-full max-w-[600px] h-auto object-contain"
                     />
                 </div>
-                
-            </div>
+            </Container>
         </section>
     );
 }

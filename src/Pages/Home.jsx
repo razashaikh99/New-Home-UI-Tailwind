@@ -11,7 +11,7 @@ import Footer from '../Components/Footer'
 
 export default function Home() {
   return (
-    <div className='flex flex-col mx-auto'>
+    <div className=''>
       <Header />
       <SectionOne />
       <SectionTwo />

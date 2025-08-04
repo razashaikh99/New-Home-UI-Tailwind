@@ -1,10 +1,11 @@
 import React from 'react';
 import Logo from "../assets/images/logo.png";
+import Container from './Container';
 
 export default function Footer() {
     return (
-        <div className='mt-6 bg-gray mx-auto px-4 sm:px-6 lg:px-24 pt-20 pb-8 mb-4 rounded-xl'>
-            <div className="flex flex-col lg:flex-row justify-between items-start gap-10 pb-8">
+        <div className='mt-6 bg-gray mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-8 mb-4 rounded-xl'>
+            <Container className="flex flex-col lg:flex-row justify-between items-start gap-10 pb-8">
                 {/* Left Block */}
                 <div className="max-w-lg">
                     <div data-aos="flip-up" className="flex items-center mb-4">
@@ -54,7 +55,7 @@ export default function Footer() {
                         <li className='text-[#333333] text-[16px] py-1'>Contact Us</li>
                     </ul>
                 </div>
-            </div>
+            </Container>
 
             {/* Divider */}
             <hr className='border-t mt-4 mb-6' />
