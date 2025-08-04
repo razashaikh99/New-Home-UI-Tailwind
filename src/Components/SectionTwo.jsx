@@ -6,7 +6,7 @@ import Mask04 from "../assets/images/mask-04.svg"
 
 export default function SectionTwo() {
     return (
-        <div className="my-20 w-full max-w-[1300px] px-4 mx-auto">
+        <div className="my-20 max-w-[1300px] px-4 mx-auto">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                 <div>
                     <p className="w-full text-[30px] sm:text-[36px] md:text-[45px] font-semibold leading-12 lg:leading-18">

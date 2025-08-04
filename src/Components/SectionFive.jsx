@@ -35,38 +35,40 @@ const testimonials = [
 
 export default function SectionFive() {
     return (
-        <div className="py-20 px-4 sm:px-6 md:px-12 lg:px-20 bg-gray-100">
-            <h2 className="text-center text-3xl sm:text-4xl lg:text-5xl font-semibold mb-12">
-                What Our Hosts Say
-            </h2>
+        <div className="overflow-x-hidden py-20 bg-gray-100">
+            <div className='max-w-screen-xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20'>
+                <h2 className="text-center text-3xl sm:text-4xl lg:text-5xl font-semibold mb-12">
+                    What Our Hosts Say
+                </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {testimonials.map((t, index) => (
-                    <div
-                        key={index}
-                        className="bg-white rounded-xl p-6 shadow-md"
-                        data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
-                        data-aos-offset="200"
-                        data-aos-easing="ease-in-sine"
-                    >
-                        <div className="flex items-center mb-4">
-                            <img src={t.img} alt={t.name} className="w-16 h-16 rounded-full" />
-                            <div className="ml-4">
-                                <p className="text-lg font-semibold">{t.name}</p>
-                                <p className="text-sm text-gray-500">{t.title}</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {testimonials.map((a, index) => (
+                        <div
+                            key={index}
+                            className="bg-white rounded-xl p-6 shadow-md"
+                            data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+                            data-aos-offset="200"
+                            data-aos-easing="ease-in-sine"
+                        >
+                            <div className="flex items-center mb-4">
+                                <img src={a.img} alt={a.name} className="h-16 w-16 rounded-full object-cover" />
+                                <div className="ml-4">
+                                    <p className="text-lg font-semibold">{a.name}</p>
+                                    <p className="text-sm text-gray-500">{a.title}</p>
+                                </div>
                             </div>
+                            <p className="text-gray-700 leading-relaxed text-[15px]">{a.message}</p>
                         </div>
-                        <p className="text-gray-700 leading-relaxed text-[15px]">{t.message}</p>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
 
-            {/* Dots */}
-            <div className='flex justify-center gap-8 mt-12'>
-                <span className='p-2 bg-[#FB8053] rounded-full'></span>
-                <span className='p-2 bg-[#FB8053] opacity-50 rounded-full'></span>
-                <span className='p-2 bg-[#FB8053] opacity-50 rounded-full'></span>
-                <span className='p-2 bg-[#FB8053] opacity-50 rounded-full'></span>
+                {/* Dots */}
+                <div className='flex justify-center gap-8 mt-12'>
+                    <span className='p-2 bg-[#FB8053] rounded-full'></span>
+                    <span className='p-2 bg-[#FB8053] opacity-50 rounded-full'></span>
+                    <span className='p-2 bg-[#FB8053] opacity-50 rounded-full'></span>
+                    <span className='p-2 bg-[#FB8053] opacity-50 rounded-full'></span>
+                </div>
             </div>
         </div >
     );
