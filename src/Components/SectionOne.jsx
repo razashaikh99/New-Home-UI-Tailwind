@@ -3,7 +3,7 @@ import BgImage from "../assets/images/bg-01.png";
 export default function SectionOne() {
     return (
         <div
-            className="mt-24 md:w-[98.4%] h-120 lg:h-140 mb-3 mx-2 lg:mx-3 rounded-xl bg-cover bg-center flex items-center"
+            className="mt-23 lg:mt-24 md:w-[98.4%] h-120 lg:h-140 mb-3 mx-2 lg:mx-3 rounded-xl bg-cover bg-center flex items-center"
             style={{
                 backgroundImage: `url(${BgImage})`,
                 minHeight: "300px", 
